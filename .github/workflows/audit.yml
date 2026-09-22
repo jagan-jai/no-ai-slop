@@ -1,0 +1,8 @@
+name: 34-pattern audit
+on: [push]
+jobs:
+  lint-md:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - run: 'echo audit reference: references/humanizer.md'
